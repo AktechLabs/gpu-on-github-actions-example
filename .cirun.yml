@@ -1,0 +1,9 @@
+runners:
+  - name: gpu-runner
+    cloud: aws
+    instance_type: g4dn.xlarge
+    region: eu-west-1
+    machine_image: ami-05d0027a52ec1001b
+    workflow: .github/workflows/sample.yml
+    labels:
+      - gpu
